@@ -30,8 +30,6 @@ def sendMsg(message):
 
 	producer.flush()
 
-POSTGRESQL_URI='postgres://avnadmin:Lk7YXjh4FTVhgF8d@pg-2a999da2-blogremindme-cdf4.aivencloud.com:11988/defaultdb?sslmode=require'
-
 def psqlCon(query_sql):
     conn = psycopg2.connect(POSTGRESQL_URI)
 
